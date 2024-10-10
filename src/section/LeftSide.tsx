@@ -10,7 +10,7 @@ import { useSelectedUser } from "../context/SelectedUserContext";
 
 const LeftSide = () => {
   const { selectedMenuId } = useMenu();
-  const { selectedUser, setSelectedUser } = useSelectedUser();
+  const { setSelectedUser } = useSelectedUser();
   const handleClick = (id: number) => {
     //alert(`Clicked person with ID: ${id}`);
     const person = users.find((user) => user.id === id);

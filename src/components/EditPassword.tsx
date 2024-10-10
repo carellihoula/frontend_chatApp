@@ -4,9 +4,7 @@ import { CiLock } from "react-icons/ci";
 import TextInputField from "./TextInputFieldt";
 import styled from "styled-components";
 
-type Props = {};
-
-export const EditPassword = (props: Props) => {
+export const EditPassword = () => {
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
